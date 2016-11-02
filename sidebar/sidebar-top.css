@@ -1,0 +1,25 @@
+.con1 {
+    background-color : #2aabd2;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-collapse .container-fluid {
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid #55595c;
+}
+
+.navbar-collapse h4 {
+    color: #818a91;
+}
+
+.navbar-collapse .text-muted {
+    color: #818a91;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}

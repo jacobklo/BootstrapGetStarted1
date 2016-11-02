@@ -1,0 +1,58 @@
+body,html,.row-offcanvas {
+    height:100%;
+}
+
+#h3Name {
+    color: #FFFFFF;
+}
+
+#sidebar {
+    width: inherit;
+    min-width: 220px;
+    max-width: 220px;
+    background-color:#f5f5f5;
+    float: left;
+    height:100%;
+    position:relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+#main {
+    height:100%;
+    overflow:auto;
+}
+
+/*
+ * off Canvas sidebar
+ * --------------------------------------------------
+ */
+        /*
+         * HACK: after 768, the left sidebar will always show
+         * To make it always hidden, make max-width very high number or
+         * equal to browser width
+         */
+
+@media screen and (max-width: 768px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        width:calc(100% + 220px);
+    }
+
+    .row-offcanvas-left
+    {
+        left: -220px;
+    }
+
+    .row-offcanvas-left.active {
+        left: 0px;
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+    }
+}
+
